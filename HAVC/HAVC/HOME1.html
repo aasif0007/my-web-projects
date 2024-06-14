@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+
+      
+    <title>HAVC</title>
+   <style>
+
+
+    *{
+           
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+
+
+    .fa-brands{
+        margin: 10px 10px;
+        
+
+        font-size:large;
+
+
+
+
+
+}
+
+.nav-link{
+
+  padding-top:30px ;  
+
+}
+#home_page{
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(homepage_bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.cards_2_link a:link {
+
+    text-align: center;
+}
+
+
+.cards_2{
+
+
+margin: auto;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+
+}
+
+.card_values{
+  color: white;
+  margin: 25px auto;
+}
+
+.form_input{
+background-color: transparent;
+padding: 10px;
+margin: 20px;
+border: 1px solid white;
+color: white;
+outline: none;
+
+
+}
+
+input::placeholder {
+  font-weight: bold;
+  opacity:1;
+  color: rgb(255, 255, 255);
+}
+
+.form_option
+
+  {
+background-color: transparent;
+padding: 10px;
+margin: 20px;
+border: 1px solid white;
+color: white;
+outline: none;
+width: 35%;
+
+}
+  
+.option_select{
+
+  background: rgba(255, 255, 255, 0);
+  color: rgb(0, 0, 0);
+}
+
+.form_textarea{
+
+background: rgba(232, 230, 230, 0);
+color: white;
+width: 100%;
+
+
+}
+
+/* card csss */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+}
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+ 
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070F4;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070F4;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #265DF2;
+}
+
+.swiper-navBtn{
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+
+   </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)"></a>
+          <div class="my-3 mx-4" style="display: flex; flex-wrap: nowrap;">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            
+        </div>
+          <button class="navbar-toggler text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto mx-4 px-4">
+              <li class="nav-item mx-3 px-2">
+                <a class="nav-link text-dark fw-bold" href="javascript:void(0)">HOME</a>
+              </li>
+              <li class="nav-item mx-3 px-2">
+                <a class="nav-link text-dark fw-bold" href="javascript:void(0)">ABOUT</a>
+              </li>
+
+              <li class="nav-item   bg-dark" style="display: flex; align-items: center; height: 100%;">
+                <img src="main _logo1.png" class="mx-2 my-2" style="padding: 1vw;">
+              </li>
+              <li class="nav-item mx-3 px-2">
+                <a class="nav-link text-dark fw-bold" href="javascript:void(0)">SHOP</a>
+              </li>
+              <li class="nav-item mx-3 px-2">
+                <a class="nav-link text-dark fw-bold" href="javascript:void(0)">CONTACT</a>
+              </li>
+              <li>
+
+              </li>
+            </ul>
+            <p  class="mx-5 border border-3 border-warning px-4 py-3 fw-bold text-primary" style="font-size: 2vw;">1–688–688-94</p>
+           
+             
+
+            
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid" id="home_page">
+
+        <div class="row">
+
+
+            <div class="col-lg-12">
+
+
+                <div class="head_text  border border-1  my-5 py-5 mx-3 px-5" style="width: 70%; backdrop-filter: blur(10px);">
+
+
+                    <h2>KEEPING YOUR HOME COMFORTABLE ALL YEAAR LONG</h2>
+                    <p>that air conditioning systems are regularly maintained.</p> 
+                    <button type="button" class="btn btn-warning px-3 py-2 my-5 fw-bold">CONTACT US</button>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="container-fluid" id="card_container" style="margin-top: -150px;">
+
+        <div class="row my-3 d-flex justify-content-around" id="card_row ">
+
+          <div class="card d-flex align-items-center my-5 mx-1" style="width: 18rem;">
+            <img src="card_img1.png" class="card-img-top py-3 px-3 center " style="width: 50%">
+            <div class="card-body">
+              <h5 class="card-title">No Upfront Payments</h5>
+              
+            </div>
+          </div>
+          <div class="card d-flex align-items-center my-5 mx-1" style="width: 18rem;">
+            <img src="card_img2.png" class="card-img-top py-3 px-3 center " style="width: 50%">
+            <div class="card-body">
+              <h5 class="card-title">No Upfront Payments</h5>
+              
+            </div>
+          </div>
+          <div class="card d-flex align-items-center my-5 mx-1" style="width: 18rem;">
+            <img src="card_img3.png" class="card-img-top py-3 px-3 center " style="width: 50%">
+            <div class="card-body">
+              <h5 class="card-title">No Upfront Payments</h5>
+              
+            </div>
+          </div>
+          <div class="card d-flex align-items-center my-5 mx-1" style="width: 18rem;">
+            <img src="card_img4.png" class="card-img-top py-3 px-3 center " style="width: 50%">
+            <div class="card-body">
+              <h5 class="card-title">No Upfront Payments</h5>
+              
+            </div>
+          </div>
+
+
+
+      <div class="container-fluid">
+          <div class="row my-4">
+            <div class="col-md-6">
+
+
+
+                <h3 class="text-primary mx-5">OUR SERVICE</h3>
+                <p class="mx-5 my-2" style="font-size: xx-large; font-weight: 600;">WHAT WE CAN OFFER YOU</p>
+                
+            </div>
+            <div class="col-lg-6">
+
+                <button type="button" class="btn btn-outline-warning fw-bold text-dark my-4 mx-5">GET A QUOTE<i class="fa fa-question" aria-hidden="true"></i></button
+            </div>
+
+            <!-- start cads -->
+        </div>
+        <div class="row">
+
+
+            <div class="cards_2 col-md-4  col-sm-6 my-3 py-3  col-12 ">
+
+                <div class="img area my-3 py-3" style="background-image: url(cards_slide_img1.jpg); background-repeat: no-repeat; background-size: cover; height: 300px;"></div>
+                <div class="cards_area">
+
+                    <h4 class="text-center my-3">Maintance & repair</h4>
+                   
+                 <p class="text-center px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+               <a href="" class=" cards_2_link fw-bold text-dark text-center" style="text-align: center; margin-left: 40%; margin-right: 40%;">MORE</a>
+                </div>
+            </div>
+
+
+            
+            <div class=" cards_2 col-md-4  col-sm-6 my-3 py-3  col-12">
+
+                <div class="img area my-3 py-3" style="background-image: url(cards_slide_img2.jpg); background-repeat: no-repeat; background-size: cover; height: 300px;"></div>
+                <div class="cards_area">
+
+                    <h4 class="text-center my-3">Maintance & repair</h4>
+                   
+                 <p class="text-center px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+               <a href="" class=" cards_2_link fw-bold text-dark text-center" style="text-align: center; margin-left: 40%; margin-right: 40%;">MORE</a>
+                </div>
+            </div>
+
+
+            
+            <div class=" cards_2 col-md-4  col-sm-6 my-3 py-3  col-12">
+
+                <div class="img area my-3 py-3" style="background-image: url(cards_slide_img3.jpg); background-repeat: no-repeat; background-size: cover; height: 300px;"></div>
+                <div class="cards_area">
+
+                    <h4 class="text-center my-3">Maintance & repair</h4>
+                   
+                 <p class="text-center px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+               <a href="" class=" cards_2_link fw-bold text-dark text-center" style="text-align: center; margin-left: 40%; margin-right: 40%;">MORE</a>
+                </div>
+            </div>
+
+            
+        </div>
+      </div>
+
+      <div class="container-fluid">
+
+
+        <div class="row d-flex justify-content-around" style="background-color: rgb(86, 72, 161);">
+
+
+            <div class="col-lg-3 ">
+                <div class="card_sec px-5 py-5 d-flex flex-column align-items-center">
+
+                    <img src="home_icons1.png" alt="">
+                    <h1 class="card_values">3589</h1>
+                    <h6 class="text-light">Satisfied Customers</h6>
+
+                    
+                </div>
+            </div>
+
+            
+            <div class="col-lg-3 ">
+              <div class="card_sec px-5 py-5 d-flex flex-column align-items-center">
+
+                  <img src="home_icons2.png" alt="">
+                  <h1 class="card_values">3589</h1>
+                  <h6 class="text-light">Satisfied Customers</h6>
+
+                  
+              </div>
+          </div>
+
+          
+          <div class="col-lg-3 ">
+            <div class="card_sec px-5 py-5 d-flex flex-column align-items-center">
+
+                <img src="home_icons3.png" alt="">
+                <h1 class="card_values">3589</h1>
+                <h6 class="text-light">Satisfied Customers</h6>
+
+                
+            </div>
+        </div>
+
+        
+        <div class="col-lg-3 ">
+          <div class="card_sec px-5 py-5 d-flex flex-column align-items-center">
+
+              <img src="home_icons4.png" alt="">
+              <h1 class="card_values">3589</h1>
+              <h6 class="text-light">Satisfied Customers</h6>
+
+              
+          </div>
+         </div>
+
+         
+      
+           
+          </div>
+      </div>
+
+      <div class="container-fluid my-3">
+
+        <div class="row my-3">
+
+          <div class="col-lg-6 col-md-12 my-5" style="overflow: hidden;">
+            <div class="img_class">
+
+              <img src="img_class 11.jpg" alt="" style="max-width: 100%;">
+              <img src="img_class 12.jpg" style="max-width: 100%; margin: -130px 10px 10px 220px;border: 10px solid white;">
+            </div>
+
+
+          </div>
+          <div class="col-lg-6 col-md-12 my-5">
+
+            <h5 class="text-primary my-4 mx-3">WELCOM TO HVAC</h5>
+            <h2 class="mx-3 my-4">Quality Heating & Cooling</h2>
+            <p class="mx-3 my-5">We provide customers with an industry leading 10-year installation warranty and a two-year service and repair warranty. With most companies, you will get a standard manufacturers warranty on installations and a one-year warranty on service and repair work. We believe our warranties set us apart from our competitors and show our commitment to quality work and service</p>
+            <li>Consectetur adipiscing elit, sed do eiusmod</li>
+            <li>Tempor incididunt ut labore et dolore magna aliqua</li>
+            <li>Quis ipsum suspendisse ultrices gravida.</li>
+            <button type="button" class="btn btn-outline-warning text-dark px-3 mx-5 py-2 my-5 fw-bold">GET IN TOUCH</button>
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+
+
+          <div class="col-lg-6 col-md-12 my-5" style="background: rgb(21, 189, 255); height: fit-content;">
+            <h2 class="my-3 mx-5 py-3 text-light">Get a quote</h2>
+
+          
+              <div class="row">
+
+                <div class="col-md-6 col-sm-6 col-12 d-flex justify-content-center"> <input type="text" class="form_input text-light" placeholder="name"></div>
+                <div class="col-md-6 col-sm-6 col-12 d-flex justify-content-center"><input type="text" class="form_input" placeholder="Phone"></div>
+                <div class="col-md-6 col-sm-6 col-12 d-flex justify-content-center"> <input type="email" class="form_input" placeholder="Email"></div>
+                <div class="col-md-6 col-sm-6 d-flex justify-content-center">
+
+                  <select id="cars" class="form_option" style="width: 200px;">
+                    <option value="" class="option_select">Choose services</option>
+                    <option value="" class="option_select">Clean</option>
+                    <option value="" class="option_select">Repair</option>
+                    <option value="" class="option_select">Heating</option>
+                  </select>
+                 
+
+                </div>
+
+                <div class=" form_textarea text-light col-md-12 d-flex justify-content-center">
+                  <textarea class="form-control my-3" style="width: 90%; background: transparent;" id="exampleFormControlTextarea1" rows="3"></textarea>
+                
+                </div>
+
+                <button type="button" class="btn btn-outline-warning text-dark px-3 mx-5 py-2 my-4 fw-bold" style="width: auto;" >GET IN TOUCH</button>
+
+              </div>
+
+</div>
+
+<div class="col-lg-6 my-5">
+  <img src="form_class_img1.jpg" style="width: 100%; height: 480px;">
+ </div>
+
+
+
+        </div>
+      </div>
+
+      <div class="container-fluid">
+
+        <p class="text-center">TESTIMONIAL</p>
+        <h2 class="text-center">What Cilents Say?</h2>
+
+        <div class="cards">
+
+          <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay px-3 py-3"></span>
+
+                            <div>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                gravida.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Mohamed Yousef
+</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                      <div class="image-content">
+                          <span class="overlay px-3 py-3"></span>
+
+                          <div>
+                            <p class="px-3 py-3" style="text-align: justify; font-style: italic; font-weight: 400;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                              incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                              gravida.</p>
+                          </div>
+                      </div>
+
+                      
+                  </div>
+
+                
+                   
+                    
+                   
+                  
+                   
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        </div>    
+    </body>
+
+    <!-- Swiper JS -->
+   <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+      <!--Uncomment this line-->
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
+
+        </div>
+      </div>
+      
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+
+
+  // cards script
+
+
+  var swiper = new Swiper(".slide-content", {
+    slidesPerView: 1,
+    spaceBetween: 25,
+    loop: true,
+  
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 0,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
+
+
+</script>
+  </body>
+</html>
