@@ -1,0 +1,183 @@
+.navbar-brand {
+
+    background-image: url(web_logo1.png);
+    color: rgba(240, 248, 255, 0);
+}
+
+a:link,
+nav-link {
+
+    font-weight: 500 !important;
+}
+
+.homepage1 {
+
+    background-image: url(home\ banner1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+
+}
+
+.class-2 {
+
+    background-image: url(home\ banner\ 21.png);
+    background-position: center;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+
+}
+
+#seach_input {
+
+    border: 1px solid black;
+    background: black;
+
+}
+
+
+.catagory {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.catagory_child {
+
+    text-decoration: none;
+    font-size: larger;
+    color: cadetblue;
+    padding: 5px;
+
+
+}
+
+.catagory_child:hover {
+
+    color: blueviolet;
+    border-bottom: 2px solid blueviolet;
+
+}
+
+.job_tags {
+
+    border: 1px solid black;
+    width: fit-content;
+    padding: 9px;
+    border-radius: 40px;
+    background-color: antiquewhite;
+    color: rgb(26, 146, 232);
+    font-weight: 700;
+
+}
+
+
+.job_cards {
+
+    margin: auto;
+    width: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#ad_banner{
+background-image: url(ad_banner1.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+height: 100vh;
+
+}
+
+.ad_text{
+
+        margin-top: 50%;
+
+}
+
+
+/*ad  slider  css*/
+html,
+body {
+position: relative;
+
+}
+
+body {
+background: #eee;
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+font-size: 14px;
+color: #000;
+margin: 0;
+padding: 0;
+}
+
+.swiper {
+width:100%
+height: auto !important;
+}
+
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.swiper-slide img {
+display: block;
+width: 50%;
+height: 100%;
+object-fit: cover;
+
+margin: auto;
+}
+
+/* slider  css 2*/
+
+
+
+.slide_description{
+
+justify-content: center;
+font-weight: 600;
+text-align:left
+
+
+}
+
+.slide_img{
+size: 100px;
+width:min-content;
+height: auto;
+
+}
+
+
+
+
+
+
+
+.member_card_h4,.member_card_h2,.member_card_p{
+
+
+text-align: center;
+}
+
+.membership_cards
+{
+
+    box-shadow: -1px 0px 5px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: -1px 0px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: -1px 0px 5px 0px rgba(0,0,0,1);
+
+}
