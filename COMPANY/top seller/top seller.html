@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>top seller</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+    integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body html {
+
+
+      height: 100%;
+      margin: 0;
+    }
+
+    * {
+
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    li,
+    a {
+
+      padding: 10px 10px;
+      list-style-type: none;
+      text-decoration: none;
+      color: black;
+      font-size: 1.2vw;
+
+
+
+    }
+
+    a:hover {
+
+      border-bottom: 1px solid black;
+    }
+
+    nav ul {
+
+      height: 100px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+    }
+
+    nav ul {
+
+      height: 100%;
+      width: 100%;
+    }
+
+    
+
+
+
+    @media only screen and (max-width: 750px) {
+
+      .nav-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+      }
+
+      #nav_input {
+
+        max-width: 100% !important;
+        width: 41vh;
+        margin-bottom: 10px !important;
+
+      }
+
+      #lastimg {
+
+        height: auto;
+        width: auto;
+      }
+
+    }
+
+    @media only screen and (max-width: 440px) {
+
+
+      .homepage {
+
+        background-size: cover;
+        height: 100% !important;
+      }
+
+      div i {
+
+        padding: 10px;
+      }
+    }
+
+    div i {
+
+      font-size: 4vw;
+      border: 1px solid black;
+      border-radius: 100px;
+      margin-top: -px;
+
+      /* */
+    }
+
+    .icons,
+    .icons_link {
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .icons_link a:LINK {
+      font-size: 2vw;
+    }
+
+    .card-title,
+    .card-text {
+
+
+      font-size: 2vh;
+    }
+
+    .col-lg-3 a:link{
+
+        border-bottom: 1px solid black;
+        margin-left: 5% ;
+    }
+
+ 
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+
+    <span class="nav-container"
+      style=" margin-top: 20px; border-bottom: 1px solid rgba(47, 45, 45, 0.139); display: flex; align-items: center; justify-content: space-around;">
+
+      <div style="display:flex; align-items: center !important; ">
+
+        <i class="fa-solid fa-user"
+          style="font-size: large; border: 1px solid ; border-radius: 50px; padding: 10px; margin:10px 5x;"></i>
+        <i class="fa-brands fa-twitter"
+          style="font-size: large; border: 1px solid ; border-radius: 50px; padding: 10px; margin:10px 5x;"></i>
+        <i class="fa-brands fa-facebook"
+          style="font-size: large; border: 1px solid ; border-radius: 50px; padding: 10px; margin:10px 5x;"></i>
+        <i class="fa-brands fa-instagram"
+          style="font-size: large; border: 1px solid ; border-radius: 50px; padding: 10px; margin:10px 5px;"></i>
+      </div>
+
+      <div class="" style="width: auto;">
+
+        <h3 style="text-align: center; font-weight: 700; margin-top: 30px; width: auto;">PUBLISHING<span
+            style="color: rgb(253, 54, 54);"> COMPANY</span></h3>
+        <p style="text-align: center; color: #B2B2B2; margin-top -10px;">BOOK PUBLISHING COMPANY</p>
+      </div>
+
+      <div>
+
+
+
+        <div style="margin-top: 0px; width: auto">
+          <input type="text" placeholder="Search" style=" padding: 9px; border-radius: 20px; " id="nav_input">
+        </div>
+
+
+
+      </div>
+  </div>
+
+  <div class="header">
+    <nav>
+
+      <ul>
+
+        <li><a href="">HOME</a></li>
+        <li><a href="" style="border-bottom: 1px solid black;">COMING SOON</a></li>
+        <li><a href="">TOP SELLER</a></li>
+        <li><a href="">BOOKS</a></li>
+        <li><a href="">Contact us</a></li>
+      </ul>
+
+    </nav>
+
+
+  </div>
+
+
+  <div class="container-fluid" style="background-image: url(comingSoon1.jpg); height: 50vh; width: auto; text-align: center; padding-top: 8%; background-repeat: no-repeat; background-position: center; background-size: cover; background-attachment: fixed;">
+<h1 style="font-size: 5vw;">Top Seller</h1>
+
+  </div>
+
+  
+<div class="container-fluid">
+
+
+    <div class="row" style="margin-top: 10%;">
+
+        <div class="col-lg-9 col-md-9 col-sm-9">
+
+            <div class="row">
+
+                <!-- card -->
+                <div class="col-lg-4">
+
+                    <div class="img m-3 col-md-4" style="background-image: url(book11.jpg); background-position: center !important; background-size: cover; background-repeat: no-repeat; width: 100%; height: 380px;"></div>
+                    <p class="p-3" style="font-size: xx-large; ">$12.00</p>
+                    <h4 style="text-align: center;"><a href="">You Are Your Only Limit</a></h4>
+                    <p style="text-align: center;">By John Nathan Muller</p>
+              
+                </div>
+                <div class="col-lg-4 col-md-4">
+
+                    <div class="img m-3" style="background-image: url(book21.jpg); background-position: center !important; background-size: cover; background-repeat: no-repeat; width: 100%; height: 380px;"></div>
+                    <p class="p-3" style="font-size: xx-large; ">$12.00</p>
+                    <h4 style="text-align: center;"><a href="">You Are Your Only Limit</a></h4>
+                    <p style="text-align: center;">By John Nathan Muller</p>
+              
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+
+                    <div class="img m-3" style="background-image: url(book31.jpg); background-position: center !important; background-size: cover; background-repeat: no-repeat; width: 100%; height: 380px;"></div>
+                    <p class="p-3" style="font-size: xx-large; ">$12.00</p>
+                    <h4 style="text-align: center;"><a href="">You Are Your Only Limit</a></h4>
+                    <p style="text-align: center;">By John Nathan Muller</p>
+              
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+
+                    <div class="img m-3" style="background-image: url(books1.jpg); background-position: center !important; background-size: cover; background-repeat: no-repeat; width: 100%; height: 380px;"></div>
+                    <p class="p-3" style="font-size: xx-large; ">$12.00</p>
+                    <h4 style="text-align: center;"><a href="">You Are Your Only Limit</a></h4>
+                    <p style="text-align: center;">By John Nathan Muller</p>
+              
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+
+                    <div class="img m-3" style="background-image: url(books2.jpg); background-position: center !important; background-size: cover; background-repeat: no-repeat; width: 100%; height: 380px;"></div>
+                    <p class="p-3" style="font-size: xx-large; ">$12.00</p>
+                    <h4 style="text-align: center;"><a href="">You Are Your Only Limit</a></h4>
+                    <p style="text-align: center;">By John Nathan Muller</p>
+              
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+
+                    <div class="img m-3" style="background-image: url(books3.jpg); background-position: center !important; background-size: cover; background-repeat: no-repeat; width: 100%; height: 380px;"></div>
+                    <p class="p-3" style="font-size: xx-large; ">$12.00</p>
+                    <h4 style="text-align: center;"><a href="">You Are Your Only Limit</a></h4>
+                    <p style="text-align: center;">By John Nathan Muller</p>
+              
+                </div>
+
+
+             
+
+              
+                <!-- card -->
+              
+
+            </div>
+        </div>
+  <div class="col-lg-3" style="display: flex; flex-direction: column;">
+<center>
+
+    <input type="" placeholder="Type a keywords and hit enter" style="padding: 5%; width: max-content; margin-top: 5%;">
+
+</center>
+
+<h3 style="margin: 10% 10px 10px 13%;">GENRES</h3>
+
+
+<a href="">Fantasy</a>
+<a href="">Adventure</a>
+<a href="">Romance</a>
+<a href="">Comedy</a>
+<a href="">Mystery</a>
+<a href="">Horror</a>
+<a href="">Thriller</a>
+<a href="">Dystopian</a>
+
+
+<h3 style="margin: 25% 10px 10px 13%; border: none !important;" class="authors">TOP AUTHORS</h3>
+
+<a href="">John Nathan Muller</a>
+<a href="">Sandra Park</a>
+<a href="">Laura Preston</a>
+<a href="">John Doe</a>
+<a href="">Mc Gregor Douglas</a>
+<a href="">Atom Night</a>
+
+</div>
+
+    </div>
+
+</div>
+
+</body>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+  integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+  integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+
+
+
+</script>
+
+</html>
